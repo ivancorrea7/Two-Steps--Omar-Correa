@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <!-- IMG LOGO -->
+        <div class="titleNavContainer">
+            <h2>TwoSteps</h2>
+            <img src="../img/logo.png" alt="LOGO" class="navImg">
+        </div>
+        <!-- Paginas -->
+        <nav class="navbar">
+            <ul class="linksContainer">
+                <li>
+                    <a href="../index.html">inicio</a>
+                </li>
+                <li>
+                    <a href="./empresa.html">empresa</a>
+                </li>
+                <li>
+                    <a href="./cliente.html">acceso clientes</a>
+                </li>
+                <li>
+                    <a href="./servicios.html">Servicios</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="titleContainer">
+            <h1>CONTACTO</h1>
+        </div> 
+        
+        <!-- formulario de contacto -->
+		<form action="#" class="contactForm">
+            <img src="../img/contacto1.jpg" alt="imagen de bodyContainer" class="contactImg">
+            <div class="inputContactContainer">
+                <label for="Nombre">Nombre:</label>
+                <input type="text" name="Nombre">
+            </div>
+            <div class="inputContactContainer">
+                <label for="Apellido">Apellido:</label>
+                <input type="text" name="Apellido">
+            </div>
+            <div>
+                <label for="Hombre"></label>
+                <input type="radio" name="Sexo" id="Hombre">
+
+                <label for="Mujer"></label>
+                <input type="radio" name="Sexo" id="Mujer">
+
+                <label for="Otros"></label>
+                <input type="radio" name="Sexo" id="otros">
+            </div>
+            <div class="inputContactContainer">
+                <label for="Email">Email:</label>
+                <input type="text" name="Email" id="email">
+            </div>
+            <div class="inputContactContainer">
+                <label for="Contraseña">Contraseña:</label>
+                <input type="text" name="Contraseña" id="email">
+            </div>
+            <div class="inputContactContainer">
+                <label for="Comentarios">Comentarios:</label><br>
+                <textarea class="textAreaContact" name="" cols="30" rows="10" placeholder="Deja tu comentario" id="comentarios"></textarea><br>
+            </div>
+            <div>
+                <input type="submit">
+                <input type="reset">
+            </div>
+        </form>
+        <!-- cierre de form contacto -->
+    </main>
+    
+    <footer class="footer">
+        <h3 class="footerTitle">TwoSteps</h3>
+        <ul class="iconsContainer">
+            <li>
+                <a href="./cliente.html">
+                    <img src="../img/icon/whatsapp-brands.svg" class="footerIcon" alt="whatsapp">
+                </a>
+            </li>
+            <li>
+                <a href="./contacto.html">
+                    <img src="../img/icon/facebook-brands.svg" class="footerIcon" alt="facebook">
+                </a>
+            </li>
+            <li>
+                <a href="./empresa.html">
+                    <img src="../img/icon/instagram-brands.svg" class="footerIcon" alt="instagram">
+                </a>
+            </li>
+            <li>
+                <a href="./servicios.html">
+                    <img src="../img/icon/twitter-brands.svg" class="footerIcon" alt="twitter">
+                </a>
+            </li>
+        </ul>
+    
+    </footer>
+    
+    </body>
+    </html>
