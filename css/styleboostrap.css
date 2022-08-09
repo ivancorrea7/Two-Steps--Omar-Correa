@@ -1,0 +1,59 @@
+*{
+    list-style-type: none;
+}
+.navbar {
+    background-color: #0a4275
+}
+.navImg {
+    width: 100px;
+    margin-right: 30px;
+}
+.titleContainer {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.titleContainer h1{
+text-align: center;
+}
+.seleccionador {
+    width: 100%;
+    margin-top: 4%;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    margin-bottom: 50px;
+}
+.card {
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+.footer {
+    background-color: #0a4275;
+}
+.copyrightContainer {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.iconsContainer {
+    display: flex;
+    justify-content: space-between;
+}
+.footerIcon {
+    width: 50px;
+}
+.formContact {
+    margin: 0px 10%;
+    margin-bottom: 50px;
+    padding: 3%;
+}
+.footerLink {
+    overflow-wrap: break-word;
+}
+.empresaMain {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+@media screen and (max-width: 700px){
+    .seleccionador {
+        margin: 0;
+    }
+}
