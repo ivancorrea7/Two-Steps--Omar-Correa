@@ -4,103 +4,99 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TwoSteps</title>
+    <!-- Link a css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/styleboostrap.css">
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+    <!-- Libreria animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
-<body class="bg-warning">
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container-fluid">
-      <img src="../img/logo.png" alt="LOGO" class="navImg">
-      <h2 class="navbar-brand text-light">Two Steps</h2>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active text-light " aria-current="page" href="./pages/clienteBoostrap.html">Acceso cliente</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" href="./pagesBoostrap/contacto">Contacto</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" href="./pages/empresaBoostrap.html">Empresa</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" href="./pages/serviciosBoostrap.html" >Servicios</a>
-          </li>
+<body>
+    <header class="header">
+        <!-- IMG LOGO -->
+        <div class="titleNavContainer">
+            <h2>TwoSteps</h2>
+            <img src="./img/logo.png" alt="LOGO" class="navImg">
+        </div>
+        <!-- Paginas -->
+        <nav class="navbar">
+            <ul class="linksContainer">
+                <li>
+                    <a href="./pages/cliente.html">Acceso clientes</a>
+                </li>
+                <li>
+                    <a href="./pages/contacto.html">Contacto</a>
+                </li>
+                <li>
+                    <a href="./pages/empresa.html">Empresa</a>
+                </li>
+                <li>
+                    <a href="./pages/servicios.html">Servicios</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="titleContainer animate__animated animate__backInLeft animate__slow">
+            <h1>Importaciones e Exportaciones</h1>
+        </div>
+        <div class="contenido animate__animated animate__backInRight animate__delay-2s animate__slow">
+            <div class="caja uno">
+                <h3>Exportaciones internacionales</h3>
+                <img src="./img/contenedor3.webp" alt="contener3" class="sectionImg">
+                <p>Muchos de nuestros clientes compran sus mercaderías a empresas de China e importan las mismas con un alto nivel de angustia hasta recibir los productos en sus fábricas, depósitos o comercios.</p>
+            </div>
+            <div class="caja dos">
+                <h3>¿Es posible importar por cuenta y orden en Argentina? </h3>
+                <img src="./img/exolgan2.jpg" alt="puerto" class="sectionImg" >
+                <p>Claramente un importador puede ingresar mercaderías al territorio aduanero para su uso o para comercializar. En razón de ello, resulta distinta la operación de importación de la operación comercial que pueda haber dado origen a la intención de ejercer la acción propia de ejecutar una importación conforme manda el Código Aduanero. </p>
+            </div>
+            <div class="caja tres">
+                <h3>Mudanza Internacional</h3>
+                <img src="./img/contenedores4.jpg" alt="contenedor4" class="sectionImg">
+                <p>A continuación, presentamos informaciones de interés general para ciudadanos argentinos interesados en ingresar mudanza de bienes personales o automóvil con motivo de regreso al país luego de residir en el exterior o extranjeros que tengan permiso de residencia permanente en el país.</p>
+            </div>
+        
+        </div>
+
+    </main>
+
+
+    <footer class="footer">
+        <h3 class="footerTitle">TwoSteps</h3>
+        <ul class="iconsContainer">
+            <li>
+                <a href="./pages/cliente.html">
+                    <img src="./img/icon/whatsapp-brands.svg" class="footerIcon" alt="whatsapp">
+                </a>
+            </li>
+            <li>
+                <a href="./pages/contacto.html">
+                    <img src="./img/icon/facebook-brands.svg" class="footerIcon" alt="facebook">
+                </a>
+            </li>
+            <li>
+                <a href="./pages/empresa.html">
+                    <img src="./img/icon/instagram-brands.svg" class="footerIcon" alt="instagram">
+                </a>
+            </li>
+            <li>
+                <a href="./pages/servicios.html">
+                    <img src="./img/icon/twitter-brands.svg" class="footerIcon" alt="twitter">
+                </a>
+            </li>
         </ul>
-      </div>
-    </div>
-  </nav>
-  <header class="titleContainer">
-    <h1>
-      Importaciones e Exportaciones
-    </h1>
-  </header>
-    <div class="row seleccionador">
-      <div class="card" style="width: 18rem;">
-        <img src="./img/contenedor3.webp" class="card-img-top" alt="contener3">
-        <div class="card-body">
-          <h3 class="card-title">Exportaciones internacionales</h3>
-          <p class="card-text">Muchos de nuestros clientes compran sus mercaderías a empresas de China e importan las mismas con un alto nivel de angustia hasta recibir los productos en sus fábricas, depósitos o comercios.</p>
-        </div>
-      </div>
 
-      <div class="card" style="width: 18rem;">
-        <img src="./img/exolgan2.jpg" class="card-img-top" alt="puerto">
-        <div class="card-body">
-          <h3 class="card-title">¿Es posible importar por cuenta y orden en Argentina? </h3>
-          <p class="card-text">Claramente un importador puede ingresar mercaderías al territorio aduanero para su uso o para comercializar. En razón de ello, resulta distinta la operación de importación de la operación comercial que pueda haber dado origen a la intención de ejercer la acción propia de ejecutar una importación conforme manda el Código Aduanero.</p>
-        </div>
-      </div>
+    </footer>
 
-      <div class="card" style="width: 18rem;">
-          <img src="./img/contenedores4.jpg" class="card-img-top" alt="contenedor4s">
-            <div class="card-body">
-              <h3 class="card-title">Mudanza Internacional</h3>
-              <p class="card-text">A continuación, presentamos informaciones de interés general para ciudadanos argentinos interesados en ingresar mudanza de bienes personales o automóvil con motivo de regreso al país luego de residir en el exterior o extranjeros que tengan permiso de residencia permanente en el país.
-        </div>
-    </div>
 
-<footer class="text-center text-white" style="background-color: #0a4275;">
-  <div class="container p-4 pb-0">
-    <section class="">
-      <p class="d-flex justify-content-center align-items-center">
-        <span class="me-3">Register for free</span>
-      </p>
-    </section>
-    <ul class="iconsContainer">
-      <li>
-          <a href="./pages/cliente.html">
-              <img src="./img/icon/whatsapp-brands.svg" class="footerIcon" alt="whatsapp">
-          </a>
-      </li>
-      <li>
-          <a href="./pages/contacto.html">
-              <img src="./img/icon/facebook-brands.svg" class="footerIcon" alt="facebook">
-          </a>
-      </li>
-      <li>
-          <a href="./pages/empresa.html">
-              <img src="./img/icon/instagram-brands.svg" class="footerIcon" alt="instagram">
-          </a>
-      </li>
-      <li>
-          <a href="./pages/servicios.html">
-              <img src="./img/icon/twitter-brands.svg" class="footerIcon" alt="twitter">
-          </a>
-      </li>
-    </ul>
-  </div>
-  <div class="text-center p-3 copyrightContainer">
-    © 2020 Copyright:
-    <a class="text-white footerLink" href="https://ivancorrea7.github.io/Two-Steps--Omar-Correa/">https://ivancorrea7.github.io/Two-Steps--Omar-Correa/</a>
-  </div>
-
-</footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

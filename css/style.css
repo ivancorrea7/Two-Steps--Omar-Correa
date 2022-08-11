@@ -1,3 +1,4 @@
+/* Normalize */
 *  {
     margin: 0;
     padding: 0;
@@ -7,7 +8,7 @@
     text-decoration: none;
     font-family: 'Oswald', sans-serif;
 }
-
+/* body css */
 body {
     background-image: url("https://probucam.com/wp-content/uploads/2021/06/Role-of-a-Ship-Chandler.jpg") ;
     background-repeat: no-repeat;
@@ -15,16 +16,21 @@ body {
     background-attachment: fixed;
 }
 
+/* Navbar */
 .header {
     height: 70px;
     display: flex;
     background-color: rgb(11, 37, 184);
 }
-
+.navbar {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    margin-right: 5%;
+}
 .navImg {
     width:170px
 }
-
 .titleNavContainer {
     flex-direction: row-reverse;
     justify-content: flex-end;
@@ -33,7 +39,6 @@ body {
     gap: 30px;
     align-items: center; 
 }
-
 .titleNavContainer h2{
     font-family: 'Oswald', sans-serif;
     color: white;
@@ -41,14 +46,12 @@ body {
     word-spacing: 2px;
     font-size: 2rem;
 }
-
 .navbar {
     width: 60%;
     display: flex;
     align-items: center;
     margin-right: 5%;
 }
-
 .linksContainer {
     display: flex;
     justify-content: flex-end;
@@ -57,24 +60,21 @@ body {
     height: 100%;
     gap: 40px;
 }
-
 .linksContainer li {
     justify-content: center;
     display: flex;
     align-items: center;
 }
-
 .linksContainer li a{
     color: white;
     transition: all 1s;
     padding: 22px 5px;
 }
-
 .linksContainer li a:hover {
     transform: scale(1.11);
     background-color: #427BCA;
 }
-
+/* Title */
 .titleContainer {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -86,7 +86,7 @@ body {
     font-size: 3rem;
     text-align: center;
 }
-
+/* Index CSS */
 .contenido {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -99,19 +99,15 @@ body {
     gap: 10px;
     align-items: center;
 }
-
 .uno {
     grid-area: caja1;
 }
-
 .dos {
     grid-area: caja2;
 }
-
 .tres {
     grid-area: caja3;
 }
-
 .caja {
     width: 320px;
     background-color:#427BCA;
@@ -123,19 +119,18 @@ body {
     padding: 10px;
     padding-bottom: 20px;
 }
-
 .caja h3 {
     font-family:'Oswald', sans-serif;
     text-align: center;
     margin-bottom: 20px;
 }
-
 .sectionImg {
     width: 300px;
     border-radius: 10px;
     margin: 15px;
 } 
 
+/* Footer CSS */
 .footer {
 display: flex;
 padding: 0px 2%;
@@ -143,22 +138,18 @@ padding-top: 10px;
 align-items: center;
 background-color: rgb(11, 37, 184);
 }
-
 .footerIcon {
     width: 50px;
     transform-origin: all0.5;
 }
-
 .footerIcon :hover {
 transform: scale(0.90);
 }
-
 .iconsContainer {
     display: flex ;
     width: 70%;
     justify-content: space-around;
 }
-
 .footerTitle {
     width: 30%;
     font-family: 'Oswald', sans-serif;
@@ -167,8 +158,9 @@ transform: scale(0.90);
     word-spacing: 2px;
     font-size: 2rem;
 }
+/* Servicio CSS */
 
-/*Servicio grid*/
+/*body del servicio.html*/
 .bodyContainer {
     display: grid;
     grid-template-columns: 1fr;
@@ -178,31 +170,26 @@ transform: scale(0.90);
     "content"
     "footer";
 }
-
 .navBarConteiner {
     grid-area:navBar;
 }
-
 .mainContainer {
     grid-area:content;
 }
-
 .footerConteiner {
     grid-area:footer;
 }
-
-
 .sectionRight {
     display: flex;
     flex-direction: row-reverse;
 }
-            
+
 .sectionLeft {
-display: flex;
+    display: flex;
 }
 
 .serviceImg {
-width: 50%;
+    width: 50%;
 }
 
 .serviceContainer {
@@ -212,6 +199,8 @@ width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
+    font-size: 1.4rem;
+    margin-left: 20px;
     }
 
 .serviceContainer h3 {
@@ -220,11 +209,8 @@ width: 50%;
     margin-left: 20px;
     border-bottom: solid 1px black;
 }
-.serviceContainer {
-    font-size: 1.4rem;
-    margin-left: 20px;
-}  
 
+/* Cliente CSS */
 .formCliente {
     margin: auto;
     margin-bottom: 30vh;
@@ -235,44 +221,38 @@ width: 50%;
     padding: 30px;
     gap: 30px;
 }
-
 .formCliente h2 {
 text-align: center;
 font-size: 1.3rem;
 }
-
 .formCliente label {
 font-weight: bold;
 font-size: 1.3rem;
 margin: left 40px;;
 }
-
 .inputCliente {
     width: 28rem;
     height: 1.7rem;
     margin: auto;
 }
-
 .submit {
     width: 8rem;
     height: 1.7rem;
     margin: auto;
 }
-    
 .quienesContainer {
     display: flex;
     padding: 0px 2%;
     gap: 30px;
 }
-
+/* Empresa CSS */
 .empresaMain {
     margin-bottom: 30vh;
 }
-
 .quienesContentContainer {
     padding-top: 30px;
 }
-
+/* Contacto CSS */
 .contactForm {
     width: 40rem;
     margin: auto;
@@ -282,7 +262,6 @@ margin: left 40px;;
     gap: 20px;
     margin-bottom: 10vh;
 }
-
 .inputContactContainer {
     display: flex;
     flex-direction: column;
@@ -294,6 +273,7 @@ margin: left 40px;;
 .inputContactContainer label {
     font-weight: bold;
 }
+/* Media querie 1060px - Tablet Size */
 @media screen and (max-width: 1060px){
     .contenido {
         display: grid;
@@ -306,6 +286,7 @@ margin: left 40px;;
         ;
     }
 }
+/* Media querie 700px - Mini Tablet */
 @media screen and (max-width: 700px){
     .header {
         flex-direction: column;
@@ -322,7 +303,17 @@ margin: left 40px;;
         margin: 0%;
         gap: 0px;
     } 
+    .formCliente {
+        width: 30rem;
+    }
+    .inputCliente {
+    width: 20rem;
+    }
+    .bodyContainer {
+        grid-template-rows: 300px 5fr 80px;
+    }
 }
+/* Media querie - mobile */
 @media screen and (max-width: 420px){
     .contenido {
         margin: 0%;
