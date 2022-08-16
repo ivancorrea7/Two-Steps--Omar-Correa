@@ -1,0 +1,44 @@
+
+/* Index CSS */
+.contenido {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "caja1 caja2 caja3"
+    ;
+    justify-items: center;
+    margin: 50px;
+    gap: 10px;
+    align-items: center;
+    .uno {
+        grid-area: caja1;
+    }
+    .dos {
+        grid-area: caja2;
+    }
+    .tres {
+        grid-area: caja3;
+    }
+    .caja {
+        width: 320px;
+        background-color:#427BCA;
+        border: blue solid 1px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        padding-bottom: 20px;
+        .h3 {
+            font-family:$ff-family;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .sectionImg {
+            width: 300px;
+            border-radius: 10px;
+            margin: 15px;
+        } 
+    }
+}

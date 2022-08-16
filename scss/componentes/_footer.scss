@@ -1,0 +1,33 @@
+
+/* Footer CSS */
+.footer {
+    display: flex;
+    padding: 0px 2%;
+    padding-top: 10px;
+    align-items: center;
+    background-color: rgb(11, 37, 184);
+    .footerTitle {
+        width: 30%;
+        font-family: $ff-family;
+        color: white;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        font-size: 2rem;
+    }
+    .iconsContainer {
+        display: flex ;
+        width: 70%;
+        justify-content: space-around; 
+        li {
+            a{
+                .footerIcon {
+                    width: 50px;
+                    transform-origin: all0.5;
+                    &:hover {
+                        transform: scale(0.90);
+                        }
+                    }
+                }
+            }
+        }
+    }
