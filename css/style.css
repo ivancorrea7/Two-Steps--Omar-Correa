@@ -14,6 +14,7 @@ body {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-attachment: fixed;
+    overflow-x: hidden;
 }
 
 /* Navbar */
@@ -273,6 +274,11 @@ margin: left 40px;;
 .inputContactContainer label {
     font-weight: bold;
 }
+.textAreaContact {
+    width: 30rem;
+    resize: none;
+    height: 15rem;
+}
 /* Media querie 1060px - Tablet Size */
 @media screen and (max-width: 1060px){
     .contenido {
@@ -312,6 +318,23 @@ margin: left 40px;;
     .bodyContainer {
         grid-template-rows: 300px 5fr 80px;
     }
+    .inputContactContainer input {
+        width: 18rem;
+    }
+    .contactForm {
+        width: 18;
+    }
+    .textAreaContact{
+        width: 18rem;
+    }
+    .quienesContainer {
+        flex-direction: column;
+    }
+    .formCliente {
+        width: 25rem;
+        padding: 5px;
+        border-radius: 10px;
+    }  
 }
 /* Media querie - mobile */
 @media screen and (max-width: 420px){
@@ -357,9 +380,6 @@ margin: left 40px;;
     .formCliente label {
     margin: 0%;
     }   
-    .quienesContainer {
-        flex-direction: column;
-    }  
     .contactForm {
         width: 20rem;
     }
