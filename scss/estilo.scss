@@ -23,7 +23,100 @@ body {
     overflow-x: hidden;
 }
 
+@media screen and (max-width: 1060px){
+    .contenido {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "caja1"
+        "caja2"
+        "caja3"
+        ;
+    }
+}
+/* /Media querie de 700px - Mini Tablet Size/ */
+@media screen and (max-width: 700px){
+    .formCliente{
+        width: 30rem;
+    }
+    .inputCliente{
+        width: 20rem;
+    }
+    .bodyContainer {
+        grid-template-rows: 300px 5fr 80px;
+    }
+    .inputContactContainer input{
+        width: 18rem;
+    }
+    .contactForm{
+        width: 20rem;
+    }
+    .textAreaContact{
+        width: 18rem;
+    }
+    .quienesContainer {
+        flex-direction: column;
+    }  
+    .formCliente {
+        width: 25rem;
+        padding: 5px;
+        border-radius: 10px;
+    }
+}
+/* /Media querie - Mobible Size/ */
+@media screen and (max-width: 420px){
 
+    .bodyContainer{
+        grid-auto-rows: 550px 5fr 80px;
+    }   
+    
+    .sectionLeft {
+        flex-direction: column-reverse;
+    }
+    .sectionRight{
+        flex-direction: column-reverse;
+    }
+    .serviceImg {
+        width: 100%;
+    }
+    .formCliente {
+        width: 19rem;
+        padding: 5px;
+        border-radius: 10px;
+    }
+    .contactImg{
+        width: 300px;
+    }
+    .inputCliente {
+    width: 18rem;
+    margin: auto;
+    }
+    .formCliente label {
+    margin: 0%;
+    }   
+    .contactForm {
+        width: 20rem;
+    }
+    .inputContactContainer input {
+        width: 18rem;
+    }
+    .textAreaContact {
+        width: 18rem;    
+    }
+    .iconsContainer{
+        width: 60%;
+    }
+    .footerTitle{
+        width: 40%;
+    }
+    .bodyContainer {
+        grid-template-rows: 350px 5fr 80px;
+    }
+    .serviceContainer{
+        margin: 0%;
+    }
+}
 
 
 

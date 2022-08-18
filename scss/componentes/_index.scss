@@ -42,3 +42,16 @@
         } 
     }
 }
+
+/* /Media querie - Mobible Size/ */
+@media screen and (max-width: 420px){
+    .contenido{
+        margin: 0%;
+        .sectionImg{
+            width: 280px;
+        }
+        .caja{
+            width: 300px;
+        }
+    }
+}
