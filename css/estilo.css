@@ -1,3 +1,6 @@
+.radius, .contenido .caja, .contenido .caja .sectionImg {
+  border-radius: 10px; }
+
 .header {
   height: 70px;
   display: flex;
@@ -35,6 +38,7 @@
   .header .navImg {
     width: 170px; }
   .header h2 {
+    width: 30%;
     font-family: "Oswald", sans-serif;
     color: white;
     letter-spacing: 1px;
@@ -108,8 +112,7 @@
   .contenido .caja {
     width: 320px;
     background-color: #427BCA;
-    border: blue solid 1px;
-    border-radius: 10px;
+    border: #0b25b8 1px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -121,7 +124,6 @@
       margin-bottom: 20px; }
     .contenido .caja .sectionImg {
       width: 300px;
-      border-radius: 10px;
       margin: 15px; }
 
 /* /Media querie - Mobible Size/ */
@@ -155,10 +157,8 @@
 
 /* body*/
 body {
-  background-image: url("https://probucam.com/wp-content/uploads/2021/06/Role-of-a-Ship-Chandler.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-attachment: fixed;
+  background: #29daff;
+  background: linear-gradient(90deg, #29daff 0%, #5f49ed 35%, #2c0085 90%);
   overflow-x: hidden; }
 
 @media screen and (max-width: 1060px) {

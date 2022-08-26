@@ -6,13 +6,8 @@
     padding-top: 10px;
     align-items: center;
     background-color: rgb(11, 37, 184);
-    .footerTitle {
-        width: 30%;
-        font-family: $ff-family;
-        color: white;
-        letter-spacing: 1px;
-        word-spacing: 2px;
-        font-size: 2rem;
+    .footerTitle{
+        @include h2-style ;
     }
     .iconsContainer {
         display: flex ;

@@ -1,1 +1,22 @@
 $ff-family: 'Oswald', sans-serif;
+
+$colores: (
+    celeste:  #427BCA, 
+    negro: black,
+    blanco: white,
+    azul: rgb(11, 37, 184),
+);
+
+@mixin h2-style {
+    width: 30%;
+    font-family: $ff-family;
+    color: map-get($colores, blanco );
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-size: 2rem;
+}
+
+.radius{
+    border-radius: 10px;
+}
+

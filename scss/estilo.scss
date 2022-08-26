@@ -4,22 +4,21 @@
 @import "componentes/index";
 @import "componentes/title";
 
+
 /* Normalize */ 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style-type: none;
-    color: black;
+    color: map-get($colores , negro );
     text-decoration: none;
     font-family: $ff-family;
 }
 /* body*/
 body {
-    background-image: url("https://probucam.com/wp-content/uploads/2021/06/Role-of-a-Ship-Chandler.jpg") ;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-attachment: fixed;
+    background: rgb(41,218,255);
+    background: linear-gradient(90deg, rgba(41,218,255,1) 0%, rgba(95,73,237,1) 35%, rgba(44,0,133,1) 90%);
     overflow-x: hidden;
 }
 

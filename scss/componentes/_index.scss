@@ -22,9 +22,9 @@
     }
     .caja {
         width: 320px;
-        background-color:#427BCA;
-        border: blue solid 1px;
-        border-radius: 10px;
+        background-color: map-get($colores, celeste );
+        border:map-get($colores, azul ) 1px;
+        @extend .radius;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -37,7 +37,7 @@
         }
         .sectionImg {
             width: 300px;
-            border-radius: 10px;
+            @extend .radius;
             margin: 15px;
         } 
     }

@@ -2,7 +2,7 @@
 .header {
     height: 70px;
     display: flex;
-    background-color: rgb(11, 37, 184);
+    background-color: map-get($colores, azul );
     .navbar {
         width: 60%;
         display: flex;
@@ -20,12 +20,12 @@
                 display: flex;
                 align-items: center;
                 a{
-                    color: white;
+                    color:map-get($colores , blanco );
                     transition: all 1s;
                     padding: 22px 5px;
                     & :hover {
                         transform: scale(1.11);
-                        background-color: #427BCA;
+                        background-color: map-get($colores , celeste );
                     }
                 }
             }
@@ -40,14 +40,10 @@
         align-items: center; 
     }
         .navImg {
-            width:170px 
+            width:170px ;
         }
         h2{
-            font-family: $ff-family;
-            color: white;
-            letter-spacing: 1px;
-            word-spacing: 2px;
-            font-size: 2rem;
+        @include h2-style ;
         }
     
 }
