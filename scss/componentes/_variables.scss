@@ -15,8 +15,60 @@ $colores: (
     word-spacing: 2px;
     font-size: 2rem;
 }
+@mixin submit {
+    width: 8rem;
+    height: 1.7rem;
+    margin: auto;
+}
+@mixin serviceContainer { 
+    width: 100%;
+    background-color: #427BCA;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-size: 1.4rem;
+    margin-left: 20px;
+    h3 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 2rem;
+        margin-left: 20px;
+        border-bottom: solid 1px black;
+    }
+}
+@mixin section-service ($orientacion-row){
+        display: flex;
+        flex-direction: $orientacion-row;
+        .serviceImg{
+            width: 50%;
+        }
+        .sectionContainer{
+        width: 100%;
+        background-color: #427BCA;
+        padding: 1%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        font-size: 1.4rem;
+        margin-left: 20px;
+            h3 {
+                font-family: 'Oswald', sans-serif;
+                font-size: 2rem;
+                margin-left: 20px;
+                border-bottom: solid 1px black;
+            }
+        }   
+    }
 
 .radius{
     border-radius: 10px;
 }
 
+@mixin service-section-420 {
+    .serviceContainer{
+        margin: 0%;
+    }
+    .serviceImg {
+        width: 100%;
+    }
+}

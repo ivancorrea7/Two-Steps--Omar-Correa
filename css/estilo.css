@@ -1,6 +1,22 @@
 .radius, .contenido .caja, .contenido .caja .sectionImg {
   border-radius: 10px; }
 
+/* Normalize */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  color: black;
+  text-decoration: none;
+  font-family: "Oswald", sans-serif; }
+
+/* body*/
+body {
+  background: #29daff;
+  background: linear-gradient(90deg, #29daff 0%, #5f49ed 35%, #2c0085 90%);
+  overflow-x: hidden; }
+
 .header {
   height: 70px;
   display: flex;
@@ -145,22 +161,33 @@
     font-size: 3rem;
     text-align: center; }
 
-/* Normalize */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style-type: none;
-  color: black;
-  text-decoration: none;
-  font-family: "Oswald", sans-serif; }
+/* Cliente CSS */
+.formCliente {
+  margin: auto;
+  margin-bottom: 30vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #427BCA;
+  width: 40rem;
+  padding: 30px;
+  gap: 30px; }
+  .formCliente .formCliente h2 {
+    text-align: center;
+    font-size: 1.3rem; }
+  .formCliente .formCliente label {
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin: left 40px; }
+  .formCliente .inputCliente {
+    width: 28rem;
+    height: 1.7rem;
+    margin: auto; }
+  .formCliente .submit {
+    width: 8rem;
+    height: 1.7rem;
+    margin: auto; }
 
-/* body*/
-body {
-  background: #29daff;
-  background: linear-gradient(90deg, #29daff 0%, #5f49ed 35%, #2c0085 90%);
-  overflow-x: hidden; }
-
+/* import mediaquery 1060 */
 @media screen and (max-width: 1060px) {
   .contenido {
     display: grid;
@@ -168,13 +195,98 @@ body {
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "caja1" "caja2" "caja3"; } }
 
+/* import mediaquery 750 */
+@media screen and (max-width: 750px) {
+  .formCliente {
+    width: 25rem;
+    padding: 5px;
+    border-radius: 10px; }
+    .formCliente .inputCliente {
+      width: 20rem; } }
+
+/* import mediaquery 420 */
+/* /Media querie - Mobible Size/ */
+@media screen and (max-width: 420px) {
+  .formCliente {
+    width: 19rem;
+    padding: 5px;
+    border-radius: 10px; }
+    .formCliente .inputCliente {
+      width: 18rem;
+      margin: auto; }
+    .formCliente label {
+      margin: 0%; } }
+
+/* Servicio CSS */
+.serviceContainerbody {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70px 5fr 80px;
+  grid-template-areas: "navbar" "content" "footer"; }
+  .serviceContainerbody .navBarConteiner {
+    grid-area: navbar; }
+  .serviceContainerbody .mainContainer {
+    grid-area: content; }
+    .serviceContainerbody .mainContainer .sectionServiceContainer .sectionRight {
+      display: flex;
+      flex-direction: row-reverse; }
+      .serviceContainerbody .mainContainer .sectionServiceContainer .sectionRight .serviceImg {
+        width: 50%; }
+      .serviceContainerbody .mainContainer .sectionServiceContainer .sectionRight .sectionContainer {
+        width: 100%;
+        background-color: #427BCA;
+        padding: 1%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        font-size: 1.4rem;
+        margin-left: 20px; }
+        .serviceContainerbody .mainContainer .sectionServiceContainer .sectionRight .sectionContainer h3 {
+          font-family: 'Oswald', sans-serif;
+          font-size: 2rem;
+          margin-left: 20px;
+          border-bottom: solid 1px black; }
+    .serviceContainerbody .mainContainer .sectionServiceContainer .sectionLeft {
+      display: flex;
+      flex-direction: row; }
+      .serviceContainerbody .mainContainer .sectionServiceContainer .sectionLeft .serviceImg {
+        width: 50%; }
+      .serviceContainerbody .mainContainer .sectionServiceContainer .sectionLeft .sectionContainer {
+        width: 100%;
+        background-color: #427BCA;
+        padding: 1%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        font-size: 1.4rem;
+        margin-left: 20px; }
+        .serviceContainerbody .mainContainer .sectionServiceContainer .sectionLeft .sectionContainer h3 {
+          font-family: 'Oswald', sans-serif;
+          font-size: 2rem;
+          margin-left: 20px;
+          border-bottom: solid 1px black; }
+  .serviceContainerbody .footerConteiner {
+    grid-area: footer; }
+
+@media screen and (max-width: 420px) {
+  .serviceContainerbody {
+    grid-template-rows: 350px 5fr 80px; }
+    .serviceContainerbody .mainContainer .sectionServiceContainer .sectionLeft {
+      flex-direction: column-reverse; }
+      .serviceContainerbody .mainContainer .sectionServiceContainer .sectionLeft .serviceContainer {
+        margin: 0%; }
+      .serviceContainerbody .mainContainer .sectionServiceContainer .sectionLeft .serviceImg {
+        width: 100%; }
+    .serviceContainerbody .mainContainer .sectionServiceContainer .sectionRight {
+      flex-direction: column-reverse; }
+      .serviceContainerbody .mainContainer .sectionServiceContainer .sectionRight .serviceContainer {
+        margin: 0%; }
+      .serviceContainerbody .mainContainer .sectionServiceContainer .sectionRight .serviceImg {
+        width: 100%; } }
+
 /* /Media querie de 700px - Mini Tablet Size/ */
 @media screen and (max-width: 700px) {
-  .formCliente {
-    width: 30rem; }
-  .inputCliente {
-    width: 20rem; }
-  .bodyContainer {
+  .serviceContainerbody {
     grid-template-rows: 300px 5fr 80px; }
   .inputContactContainer input {
     width: 18rem; }
@@ -183,33 +295,12 @@ body {
   .textAreaContact {
     width: 18rem; }
   .quienesContainer {
-    flex-direction: column; }
-  .formCliente {
-    width: 25rem;
-    padding: 5px;
-    border-radius: 10px; } }
+    flex-direction: column; } }
 
 /* /Media querie - Mobible Size/ */
 @media screen and (max-width: 420px) {
-  .bodyContainer {
-    grid-auto-rows: 550px 5fr 80px; }
-  .sectionLeft {
-    flex-direction: column-reverse; }
-  .sectionRight {
-    flex-direction: column-reverse; }
-  .serviceImg {
-    width: 100%; }
-  .formCliente {
-    width: 19rem;
-    padding: 5px;
-    border-radius: 10px; }
   .contactImg {
     width: 300px; }
-  .inputCliente {
-    width: 18rem;
-    margin: auto; }
-  .formCliente label {
-    margin: 0%; }
   .contactForm {
     width: 20rem; }
   .inputContactContainer input {
@@ -219,8 +310,4 @@ body {
   .iconsContainer {
     width: 60%; }
   .footerTitle {
-    width: 40%; }
-  .bodyContainer {
-    grid-template-rows: 350px 5fr 80px; }
-  .serviceContainer {
-    margin: 0%; } }
+    width: 40%; } }

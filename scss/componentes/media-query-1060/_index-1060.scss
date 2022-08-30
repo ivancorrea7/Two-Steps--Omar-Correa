@@ -1,0 +1,13 @@
+
+@media screen and (max-width: 1060px){
+    .contenido {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "caja1"
+        "caja2"
+        "caja3"
+        ;
+    }
+}

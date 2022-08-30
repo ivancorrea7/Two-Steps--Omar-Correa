@@ -1,0 +1,15 @@
+/* /Media querie - Mobible Size/ */
+@media screen and (max-width: 420px){
+    .formCliente {
+        width: 19rem;
+        padding: 5px;
+        border-radius: 10px;
+        .inputCliente {
+            width: 18rem;
+            margin: auto;
+            }
+        label {
+            margin: 0%;
+        }   
+    }
+}

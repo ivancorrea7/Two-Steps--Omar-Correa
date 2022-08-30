@@ -159,93 +159,6 @@ transform: scale(0.90);
     word-spacing: 2px;
     font-size: 2rem;
 }
-/* Servicio CSS */
-
-/*body del servicio.html*/
-.bodyContainer {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 70px 5fr 80px;
-    grid-template-areas: 
-    "navbar"
-    "content"
-    "footer";
-}
-.navBarConteiner {
-    grid-area:navBar;
-}
-.mainContainer {
-    grid-area:content;
-}
-.footerConteiner {
-    grid-area:footer;
-}
-.sectionRight {
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-.sectionLeft {
-    display: flex;
-}
-
-.serviceImg {
-    width: 50%;
-}
-
-.serviceContainer {
-    width: 100%;
-    background-color: #427BCA;
-    padding: 1%;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    font-size: 1.4rem;
-    margin-left: 20px;
-    }
-
-.serviceContainer h3 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 2rem;
-    margin-left: 20px;
-    border-bottom: solid 1px black;
-}
-
-/* Cliente CSS */
-.formCliente {
-    margin: auto;
-    margin-bottom: 30vh;
-    display: flex;
-    flex-direction: column;
-    background-color: #427BCA;
-    width: 40rem;
-    padding: 30px;
-    gap: 30px;
-}
-.formCliente h2 {
-text-align: center;
-font-size: 1.3rem;
-}
-.formCliente label {
-font-weight: bold;
-font-size: 1.3rem;
-margin: left 40px;;
-}
-.inputCliente {
-    width: 28rem;
-    height: 1.7rem;
-    margin: auto;
-}
-.submit {
-    width: 8rem;
-    height: 1.7rem;
-    margin: auto;
-}
-.quienesContainer {
-    display: flex;
-    padding: 0px 2%;
-    gap: 30px;
-}
 /* Empresa CSS */
 .empresaMain {
     margin-bottom: 30vh;
@@ -253,6 +166,12 @@ margin: left 40px;;
 .quienesContentContainer {
     padding-top: 30px;
 }
+.quienesContainer {
+    display: flex;
+    padding: 0px 2%;
+    gap: 30px;
+}
+
 /* Contacto CSS */
 .contactForm {
     width: 40rem;
@@ -309,12 +228,6 @@ margin: left 40px;;
         margin: 0%;
         gap: 0px;
     } 
-    .formCliente {
-        width: 30rem;
-    }
-    .inputCliente {
-    width: 20rem;
-    }
     .bodyContainer {
         grid-template-rows: 300px 5fr 80px;
     }
@@ -330,11 +243,6 @@ margin: left 40px;;
     .quienesContainer {
         flex-direction: column;
     }
-    .formCliente {
-        width: 25rem;
-        padding: 5px;
-        border-radius: 10px;
-    }  
 }
 /* Media querie - mobile */
 @media screen and (max-width: 420px){

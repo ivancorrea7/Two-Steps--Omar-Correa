@@ -1,0 +1,28 @@
+/* Cliente CSS */
+.formCliente {
+    margin: auto;
+    margin-bottom: 30vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #427BCA;
+    width: 40rem;
+    padding: 30px;
+    gap: 30px;
+    .formCliente h2 {
+        text-align: center;
+        font-size: 1.3rem;
+        }
+    .formCliente label {
+        font-weight: bold;
+        font-size: 1.3rem;
+        margin: left 40px;;
+        }
+    .inputCliente {
+        width: 28rem;
+        height: 1.7rem;
+        margin: auto;
+    }
+    .submit {
+        @include submit
+    }
+}
