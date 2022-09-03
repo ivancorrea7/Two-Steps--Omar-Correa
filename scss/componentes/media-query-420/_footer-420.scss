@@ -1,0 +1,16 @@
+@media screen and (max-width: 420px){
+    .footer{
+        .iconsContainer{
+            li{
+                a{
+                    .footerIcon{
+                        width: 30px;
+                    }
+                }
+            }
+        }
+        .footerTitle{
+            width: 40%;
+        }
+    }
+}

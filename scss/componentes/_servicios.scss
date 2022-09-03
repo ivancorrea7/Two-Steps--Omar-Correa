@@ -1,0 +1,28 @@
+/* /Service CSS/ */
+
+.serviceContainerBody {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 5fr 80px;
+    grid-template-areas: 
+    "navbar"
+    "content"
+    "footer";
+    .navBarConteiner {
+        grid-area:navbar;
+    }
+    .mainContainer {
+        grid-area:content;
+        .sectionServiceContainer{
+            .sectionRight {
+                @include section-service(row-reverse);
+            }     
+            .sectionLeft {
+                @include section-service(row);
+            }
+        }
+    }
+    .footerConteiner {
+        grid-area:footer;
+    }
+}

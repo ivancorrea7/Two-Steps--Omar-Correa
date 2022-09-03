@@ -6,114 +6,23 @@
 @import "componentes/index";
 @import "componentes/title";
 @import "componentes/cliente";
+@import "componentes/servicios";
+@import "componentes/contacto";
+@import "componentes/empresa";
 
 /* import mediaquery 1060 */ 
 @import "componentes/media-query-1060/index-1060";
 
 /* import mediaquery 750 */
+@import "componentes/media-query-750/nav-750";
 @import "componentes/media-query-750/cliente-750";
+@import "componentes/media-query-750/servicios-750";
+@import "componentes/media-query-750/contacto-750";
+@import "componentes/media-query-750/empresa-750";
 
 /* import mediaquery 420 */
+@import "componentes/media-query-420/nav-420";
 @import "componentes/media-query-420/cliente-420";
-
-
-/* Servicio CSS */
-
-.serviceContainerbody {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 70px 5fr 80px;
-    grid-template-areas: 
-    "navbar"
-    "content"
-    "footer";
-    .navBarConteiner {
-        grid-area:navbar;
-    }
-    .mainContainer {
-        grid-area:content;
-        .sectionServiceContainer {
-            .sectionRight {
-                @include section-service(row-reverse);
-            }
-            .sectionLeft {
-                @include section-service(row);
-            }
-        }
-    }
-
-    .footerConteiner {
-        grid-area:footer;
-    }
-}
-
-@media screen and (max-width: 420px) {
-    .serviceContainerbody {
-        grid-template-rows: 350px 5fr 80px;
-        .mainContainer {
-            .sectionServiceContainer{
-                .sectionLeft {
-                    flex-direction: column-reverse;
-                    @include service-section-420
-                }
-                .sectionRight {
-                    flex-direction: column-reverse;
-                    @include service-section-420;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 700px) {
-
-}
-
-
-/* /Media querie de 700px - Mini Tablet Size/ */
-
-@media screen and (max-width: 700px){
-    .serviceContainerbody {
-        grid-template-rows: 300px 5fr 80px;
-    }
-    .inputContactContainer input{
-        width: 18rem;
-    }
-    .contactForm{
-        width: 20rem;
-    }
-    .textAreaContact{
-        width: 18rem;
-    }
-    .quienesContainer {
-        flex-direction: column;
-    }  
-}
-
-/* /Media querie - Mobible Size/ */
-@media screen and (max-width: 420px){
-
-    .contactImg{
-        width: 300px;
-    }
-    
-    .contactForm {
-        width: 20rem;
-    }
-    .inputContactContainer input {
-        width: 18rem;
-    }
-    .textAreaContact {
-        width: 18rem;    
-    }
-    .iconsContainer{
-        width: 60%;
-    }
-    .footerTitle{
-        width: 40%;
-    }
-}
-
-
-
-
+@import "componentes/media-query-420/servicios-420";
+@import "componentes/media-query-420/footer-420";
+@import "componentes/media-query-420/contacto-420";

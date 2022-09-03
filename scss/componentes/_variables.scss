@@ -1,10 +1,13 @@
 $ff-family: 'Oswald', sans-serif;
+$font-title: 'Anton', sans-serif;
 
 $colores: (
     celeste:  #427BCA, 
     negro: black,
     blanco: white,
-    azul: rgb(11, 37, 184),
+    gris: rgb(207, 204, 204 ),
+    azul: rgb(13, 25, 95),
+    azul-oscuro: rgb(0, 7, 46)
 );
 
 @mixin h2-style {
@@ -20,55 +23,74 @@ $colores: (
     height: 1.7rem;
     margin: auto;
 }
-@mixin serviceContainer { 
-    width: 100%;
-    background-color: #427BCA;
-    padding: 1%;
+@mixin section-service($orientacion-row){
     display: flex;
-    flex-direction: column;
-    gap: 40px;
-    font-size: 1.4rem;
-    margin-left: 20px;
-    h3 {
-        font-family: 'Oswald', sans-serif;
-        font-size: 2rem;
-        margin-left: 20px;
-        border-bottom: solid 1px black;
+    flex-direction: $orientacion-row;
+    .serviceImg{
+        width: 50%;
     }
-}
-@mixin section-service ($orientacion-row){
-        display: flex;
-        flex-direction: $orientacion-row;
-        .serviceImg{
-            width: 50%;
-        }
-        .sectionContainer{
+    .serviceContainer {
         width: 100%;
-        background-color: #427BCA;
+        background-color: map-get($colores, azul);
         padding: 1%;
         display: flex;
         flex-direction: column;
         gap: 40px;
         font-size: 1.4rem;
         margin-left: 20px;
-            h3 {
-                font-family: 'Oswald', sans-serif;
-                font-size: 2rem;
-                margin-left: 20px;
-                border-bottom: solid 1px black;
-            }
-        }   
+        h3{
+            font-family: 'Oswald', sans-serif;
+            font-size: 2rem;
+            margin-left: 20px;
+            border-bottom: solid 1px black;
+        }
     }
+}
 
 .radius{
     border-radius: 10px;
 }
 
-@mixin service-section-420 {
+@mixin box-shadow-style {
+    background: map-get($colores, azul );
+    box-shadow:  9px 9px 18px #0b0719, -9px -9px 18px #1b133d;
+    @extend .radius;
+}
+
+@mixin service-section-420{
     .serviceContainer{
         margin: 0%;
-    }
+    } 
     .serviceImg {
         width: 100%;
+    }
+}
+
+@mixin submit {
+    font-size: 1.2rem;
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #4433ff map-get($colores, azul-oscuro);
+    background: map-get($colores, azul-oscuro);
+    &:hover {
+        background: #fff;
+        color: map-get($colores, azul-oscuro);
+    }
+}
+@mixin input-style {
+    border: none;
+    background-color: map-get($colores, azul);
+    border-bottom: solid map-get($colores, blanco) 1px;
+    &::placeholder {
+        color: map-get($colores, gris);
     }
 }

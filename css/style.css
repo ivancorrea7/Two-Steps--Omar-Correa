@@ -159,45 +159,6 @@ transform: scale(0.90);
     word-spacing: 2px;
     font-size: 2rem;
 }
-/* Empresa CSS */
-.empresaMain {
-    margin-bottom: 30vh;
-}
-.quienesContentContainer {
-    padding-top: 30px;
-}
-.quienesContainer {
-    display: flex;
-    padding: 0px 2%;
-    gap: 30px;
-}
-
-/* Contacto CSS */
-.contactForm {
-    width: 40rem;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    margin-bottom: 10vh;
-}
-.inputContactContainer {
-    display: flex;
-    flex-direction: column;
-    resize: none;
-} 
-.inputContactContainer input {
-    width: 30rem;
-}
-.inputContactContainer label {
-    font-weight: bold;
-}
-.textAreaContact {
-    width: 30rem;
-    resize: none;
-    height: 15rem;
-}
 /* Media querie 1060px - Tablet Size */
 @media screen and (max-width: 1060px){
     .contenido {
@@ -230,18 +191,6 @@ transform: scale(0.90);
     } 
     .bodyContainer {
         grid-template-rows: 300px 5fr 80px;
-    }
-    .inputContactContainer input {
-        width: 18rem;
-    }
-    .contactForm {
-        width: 18;
-    }
-    .textAreaContact{
-        width: 18rem;
-    }
-    .quienesContainer {
-        flex-direction: column;
     }
 }
 /* Media querie - mobile */

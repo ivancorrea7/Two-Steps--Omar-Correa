@@ -22,9 +22,7 @@
     }
     .caja {
         width: 320px;
-        background-color: map-get($colores, celeste );
-        border:map-get($colores, azul ) 1px;
-        @extend .radius;
+        @include box-shadow-style;
         display: flex;
         flex-direction: column;
         align-items: center;

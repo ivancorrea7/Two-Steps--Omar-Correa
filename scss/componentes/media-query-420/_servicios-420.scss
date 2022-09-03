@@ -1,0 +1,17 @@
+@media screen and (max-width: 420px){
+    .serviceContainerBody{
+        grid-template-rows: 350px 5fr 80px;
+        .mainContainer{
+            .sectionServiceContainer{
+                .sectionLeft {
+                    flex-direction: column-reverse;
+                    @include service-section-420;
+                }
+                .sectionRight{
+                    flex-direction: column-reverse;
+                    @include service-section-420;
+                }
+            }
+        }
+    }
+}

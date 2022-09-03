@@ -1,0 +1,12 @@
+@media screen and (max-width: 750px){
+    .contactForm {
+        width: 20rem;
+        .inputContactContainer{
+            input {
+                width: 18rem;
+            }.textAreaContact{
+                width: 18rem;
+            }
+        }
+    }
+}

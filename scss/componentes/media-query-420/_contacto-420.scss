@@ -1,0 +1,17 @@
+/* /Media querie - Mobible Size/ */
+@media screen and (max-width: 420px){
+    .contactForm {
+        width: 20rem;
+        .inputContactContainer{
+            .textAreaContact {
+                width: 18rem;    
+            }
+            input {
+                width: 18rem;
+            }
+        }
+        .contactImg{
+            width: 300px;
+        }
+    }
+}

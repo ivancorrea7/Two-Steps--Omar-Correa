@@ -20,26 +20,10 @@
                     transform-origin: all0.5;
                     &:hover {
                         transform: scale(0.90);
+                        transition: all 2s;
                         }
                     }
                 }
             }
         }
     }
-    
-@media screen and (max-width: 420px){
-    .footer{
-        .iconsContainer{
-            li{
-                a{
-                    .footerIcon{
-                        width: 30px;
-                    }
-                }
-            }
-        }
-        .footerTitle{
-            width: 40%;
-        }
-    }
-}
