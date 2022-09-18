@@ -27,6 +27,7 @@
         flex-direction: column;
         align-items: center;
         padding: 10px;
+        animation: fade-right 1s forwards;
         padding-bottom: 20px;
         .h3 {
             font-family:$ff-family;
@@ -39,6 +40,16 @@
             margin: 15px;
         } 
     }
+    @keyframes fade-right {
+        0% {
+           opacity: 0;
+           transform: translateX(100px);
+        }
+        100% {
+           opacity: 1;
+           transform: translateX(0);
+        }
+     }   
 }
 
 /* /Media querie - Mobible Size/ */
